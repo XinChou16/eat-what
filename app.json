@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#21282b",
+    "navigationBarTitleText": "这顿吃什么呢",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#eee"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "今日吃",
+        "iconPath": "images/today.png",
+        "selectedIconPath": "images/today-select.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "明日吃",
+        "iconPath": "images/future.png",
+        "selectedIconPath": "images/future-select.png"
+      }
+    ],
+    "borderStyle": "#ff00ff",
+    "backgroundColor": "#fff",
+    "color": "#888",
+    "selectedColor": "#3a94d2"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

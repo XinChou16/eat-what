@@ -1,0 +1,41 @@
+<!-- index.wxml -->
+
+  <!-- <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">无法获取用户 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+
+    <view>{{ msg }}</view>
+    <button bindtap="clickMe">按钮</button>
+  </view>  -->
+
+  <!-- <scroll-view class="flex-wrap" scroll-x="true" scroll-left="{{scrollLeft}}">
+   <view class="a">a</view>
+   <view class="b">b</view>
+   <view class="c">c</view>
+  </scroll-view> -->
+  <view class="wrap">
+  <view class="randomMeal" >
+    <text wx:for="{{randomMeal}}">{{item}}</text>
+  </view> 
+  <view class="toEat">
+    <view class="text-toEat">
+      <text>{{text}}</text>
+    </view>
+    <view class="text-meal" wx:if="{{condition}}">
+      <text>{{textMeal}}</text>
+    </view>
+    <view class="btn-toEat" bindtap="renderMeal">
+      <!-- <button  bindtap="renderMeal" class="btn-eat">{{btnToEat}}</button> -->
+      {{btnToEat}}
+    </view>
+  </view>
+</view>
